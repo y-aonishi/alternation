@@ -1,0 +1,32 @@
+<header>
+    <nav id="nav">
+    	<ul>
+	        <li><a href="/index.html">TOP</a></li>
+	        <li><a href="/html/companyProfile.html">会社概要</a></li>
+	        <li><a href="/html/corporatePhilosophy.html">企業理念・代表挨拶</a></li>
+	        <li><a href="/html/businessArea.html">事業内容</a></li>
+	        <li><a href="/html/archives.html">事例・実績</a></li>
+	        <li><a href="/html/news/newslist.html">NEWS一覧</a></li>
+	        <li><a href="/html/recruit.html">採用情報</a></li>
+	        <li><a href="/html/inquiry.html">問い合わせ</a></li>
+      	</ul>
+    </nav>
+    <div id="hamburger">
+	      <span class="inner_line" id="line1"></span>
+	      <span class="inner_line" id="line2"></span>
+	      <span class="inner_line" id="line3"></span>
+    </div>
+</header>
+
+<script>
+	function hamburger() {
+	document.getElementById('line1').classList.toggle('line_1');
+	document.getElementById('line2').classList.toggle('line_2');
+	document.getElementById('line3').classList.toggle('line_3');
+	document.getElementById('nav').classList.toggle('in');
+	}
+	
+	document.getElementById('hamburger').addEventListener('click' , function () {
+		hamburger();
+	} );
+</script>
